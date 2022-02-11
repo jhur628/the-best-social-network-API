@@ -20,6 +20,11 @@ const reactionSchema = new Schema(
             default: Date.now,
             get: (date) => date.toLocaleDateString()
         }
+    },
+    {
+        toJSON: {
+            getters: true
+        }
     }
 );
 
