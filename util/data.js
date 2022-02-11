@@ -34,3 +34,25 @@ const reactions = [
     "STFU!"
 ];
 
+const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+const getRandomUsername = () => getRandomArrItem(usernames);
+const getRandomEmail = () => getRandomArrItem(emails);
+
+const getRandomReactions = () => {
+    const results = [];
+    reactions.forEach(reaction => results.push({
+        reactionBody: reaction,
+        username: getRandomUsername()
+    }));
+    return results;
+};
+
+const getRandomThoughts = () => {
+    const results = [];
+    thoughts.forEach(thought => results.push({
+        thoughtText: thought,
+        username: getRandomUsername()
+    }));
+    return results;
+};
