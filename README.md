@@ -46,7 +46,14 @@ Contact me at hur.john628.com. <br/>
 Github: https://github.com/jhur628/ <br/>
 
 ## Screenshots
-![The Best Tech Blog Homepage](./assets/homepage.jpg)
+![The Best Social Network API POST User](./assets/post-user.jpg)
+![The Best Social Network API GET Users](./assets/get-users.jpg)
+![The Best Social Network API PUT User](./assets/put-user.jpg)
+![The Best Social Network API POST Friend](./assets/post-friend.jpg)
+![The Best Social Network API POST Thought](./assets/post-thought.jpg)
+![The Best Social Network API GET Thoughts](./assets/get-thoughts.jpg)
+![The Best Social Network API PUT Thought](./assets/put-thought.jpg)
+![The Best Social Network API POST Reaction](./assets/post-reaction.jpg)
 
 ## License
 MIT <br/> For more information on the MIT license, visit: https://opensource.org/licenses/MIT
