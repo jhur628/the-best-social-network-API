@@ -18,6 +18,7 @@ module.exports = {
         )
         .catch((err) => res.status(500).json(err));
     },
+    // GET all thoughts
     getThoughts(req, res) {
         Thought.find({})
         .select('-__v')
@@ -28,6 +29,7 @@ module.exports = {
             res.status(500).json(err);
         });
     },
+    // GET thought by id
     getThoughtById(req, res) {
         Thought.findOne({ _id: req.params.thoughtId })
         .select('-__v')
@@ -41,5 +43,19 @@ module.exports = {
             console.log(err);
             return res.status(500).json(err);
         });
+    },
+    // PUT thought by id
+    updateThoughtById(req, res) {
+        Thought.findOneAndUpdate(
+            { _id: req.params.thoughtId },
+            { $set: req.body },
+            { runValidators: true, new: true}
+        )
+        .then((thought) =>
+            !thought
+                ? res.status(404).json({ message: 'No thought by that id!' })
+                : res.json(thought)
+        )
+        .catch((err) => res.status(500).json(err));
     }
 }

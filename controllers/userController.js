@@ -42,12 +42,12 @@ module.exports = {
             { $set: req.body },
             { runValidators: true, new: true }
         )
-            .then((user) => 
-                !user
-                    ? res.status(404).json({ message: 'No user with this id!' })
-                    : res.json(user)
-            )
-            .catch((err) => res.status(500).json(err));
+        .then((user) => 
+            !user
+                ? res.status(404).json({ message: 'No user with this id!' })
+                : res.json(user)
+        )
+        .catch((err) => res.status(500).json(err));
     },
     // DELETE user and thoughts connected to user by id
     deleteUserById(req, res) {
