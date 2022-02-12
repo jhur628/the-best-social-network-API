@@ -5,13 +5,13 @@
 ## Description
 I made the Best Social Network API.
 
-Explore the backend of a social network. Create, update, see, and delete users, friends, thoughts, and reactions. Do it with style. Do it with MongoDB.
+Explore the backend of a social network. Create, update, see, and delete users, friends, thoughts, and reactions. Do it with style. Do it with MongoDB and Mongoose.
 
 Enjoy!
 
 GitHub Repository: [https://github.com/jhur628/the-best-social-network-API](https://github.com/jhur628/the-best-social-network-API)
 
-Walkthrough Video: [https://the-best-tech-blog.herokuapp.com/](https://the-best-tech-blog.herokuapp.com/)
+Walkthrough Video: [https://watch.screencastify.com/v/BmZYgcJNdFNZJRlGvZy3](https://watch.screencastify.com/v/BmZYgcJNdFNZJRlGvZy3)
 
 ## Table of Contents
 1. [Installation](#Installation)
